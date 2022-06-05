@@ -1,0 +1,7 @@
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EGZHFV
+
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/QLCABU
+
+https://sobigdata.d4science.org/catalogue-sobigdata?path=/dataset/call_data_record_district_of_pisa_2013_october
+
+https://sobigdata.d4science.org/catalogue-sobigdata?path=/dataset/call_data_record_pisa_livorno_firenze_lucca_2014
