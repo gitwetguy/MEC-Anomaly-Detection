@@ -1,0 +1,39 @@
+@startuml
+
+package "Environment Wrapper" {
+[TimeSeriesEnvironment]
+[TimeSeriesEnvironment] -right-> Config : has
+[TimeSeriesEnvironment] -down-> Data: uses
+}
+
+package "Abstract Agent" {
+[Agent]
+[Agent] -left-> Memory: has
+[Agent] -right-> keras.Model: has
+}
+
+
+
+
+skinparam node {
+borderColor Green
+backgroundColor Yellow
+backgroundColor<<shared node>> Magenta
+}
+node "Data" {
+node Files[
+    CSVs
+    |_ A1 Benchmark
+    |_ A2 Benchmark
+    |_ A3 Benchmark
+    |_ A4 Benchmark
+    |_ numenta
+    |_ test
+]
+}
+
+[Simulator] ..> [Agent] : needs
+[Simulator] ..> [TimeSeriesEnvironment] : needs
+
+
+@enduml
